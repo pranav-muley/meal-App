@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Tasty Recipes</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+  <!-- link to fontawsome -->
+  <script src="https://kit.fontawesome.com/d679b85646.js" crossorigin="anonymous"></script>
+
+  <!-- link to bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+
+    <!-- link to css -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!--  Navbar -->
+  <nav class="navbar d-flex">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/mealLogo.avif" alt="Bootstrap" width="90" height="90"> Meal Time
+      </a>
+    </div>
+      <a class="nav-link heading " id="favList" href="static/favourite.html" onclick="showFavMealList()">
+        <i class="fa-solid fa-heart fa-beat-fade"></i> Favourite List</a>
+      
+  
+  </nav>
+
+ 
+  <!--Input section -- where food serach to be done-->
+  <div class="container text-center mt-7">
+
+    <input type="text" id="search" class="searchbox" placeholder="Search.." onclick="hide()" onkeydown="showMealList()" />
+    <button type="submit" class="searchbutton">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+
+  </div>
+
+<!--Heading section-->
+  <div id="welcome-snip" class="continer text-center mt-5">
+    <!-- welcome snippet -->
+    <h1>
+      <span class="word">Pranav<span class="superscript">s</span> </span>
+      <span class="word">Restaurant</span>
+    </h1>
+  </div>
+  
+
+  <a id="meals" href="./static/meal_details.html" class="text-decoration-none d-flex justify-content-between container flex-wrap mt-5 m-auto row"></a>
+
+    
+<!--Main conatiner this will be upadted-->
+  <div id="recipe-list" class="d-flex justify-content-between container flex-wrap mt-5 m-auto row">
+
+  </div>
+
+
+  
+  <script src="./Js/script.js"></script>
+</body>
+
+</html>
